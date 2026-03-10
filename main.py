@@ -3,7 +3,10 @@ import sys
 
 def add(a, b):
     return a + b
-
+  
+def subtract(a, b):
+    return a - b
+  
 def multiply(a, b):
     return a * b
 
@@ -17,8 +20,10 @@ def main():
 
     if(op == '+'):
         result = add(a, b)
+    elif(op == '-'):
+        result = subtract(a, b)
     elif(op == '*'):
-        result = multiply(a,b)
+        result = multiply(a,b)    
 
     print(f"{a} {op} {b} = {result}")    
 
