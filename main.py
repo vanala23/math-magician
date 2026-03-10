@@ -3,9 +3,12 @@ import sys
 
 def add(a, b):
     return a + b
-
+  
 def subtract(a, b):
     return a - b
+  
+def multiply(a, b):
+    return a * b
 
 def main():
     print("Welcome to Math Magician!")
@@ -19,6 +22,8 @@ def main():
         result = add(a, b)
     elif(op == '-'):
         result = subtract(a, b)
+    elif(op == '*'):
+        result = multiply(a,b)    
 
     print(f"{a} {op} {b} = {result}")    
 
