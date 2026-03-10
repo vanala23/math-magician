@@ -4,6 +4,9 @@ import sys
 def add(a, b):
     return a + b
 
+def multiply(a, b):
+    return a * b
+
 def main():
     print("Welcome to Math Magician!")
     op = sys.argv[1]
@@ -14,6 +17,8 @@ def main():
 
     if(op == '+'):
         result = add(a, b)
+    elif(op == '*'):
+        result = multiply(a,b)
 
     print(f"{a} {op} {b} = {result}")    
 
